@@ -1,5 +1,8 @@
 import os
 import random
+import numpy as np
+import copy
+import functools
 
 import requests
 
@@ -15,6 +18,11 @@ def phr_found(phr):
         return True
     else:
         return False
+
+
+def weighted_shuffle(items, weights):
+    order = sorted(range(len(items)), key=lambda i: -random.random() ** (1.0 / weights[i]))
+    return [items[i] for i in order]
 
 
 def read_2grams(ngrams_file='w2_.txt'):
@@ -43,16 +51,27 @@ def next_word(words, dict_2grams, all_words):
     last_w = words[-1]
     last_3ws = words[-3:]
     if last_w in dict_2grams:
-        candidates = [x[1] for x in dict_2grams[last_w]]
+        tups = dict_2grams[last_w]
+        items, weights = ([b for a, b in tups], [int(a) for a, b in tups])
+        denom = sum(weights)
+        probs = [x/denom for x in weights]
+        candidates = np.random.choice(items, len(items), replace=False, p=probs)
         for w in candidates:
             if phr_found(' '.join(last_3ws + [w])):
                 pass
             else:
+                print(w)
                 return w
-    return random.choice(all_words)
+    while True:
+        w = random.choice(all_words)
+        if phr_found(' '.join(last_3ws + [w])):
+            pass
+        else:
+            print(w)
+            return w
 
 
-def make_commons(dict_2grams, all_words, words=["common","is","that","they"], max_words=30, dest_file="common_they.txt"):
+def make_commons(dict_2grams, all_words, words=["common","is","that","they"], max_words=100, dest_file="common_they.txt"):
     with open(os.path.join(os.getcwd(), dest_file), 'w+') as common_file:
         common_file.write(' '.join(words))
         num_words = len(words)
