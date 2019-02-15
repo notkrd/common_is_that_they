@@ -51,7 +51,7 @@ def read_2grams(ngrams_file='w2_.txt'):
 def next_word(words, dict_2grams, all_words):
     last_w = words[-1]
     last_3ws = words[-3:]
-    if last_w in dict_2grams:
+    if last_w in dict_2grams and len(set(last_3ws)) > 1:
         tups = dict_2grams[last_w]
         items, weights = ([b for a, b in tups], [int(a) for a, b in tups])
         denom = sum(weights)
