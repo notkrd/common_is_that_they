@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6cb0b54-21f7-41d1-a103-7811310de5f8" name="Default Changelist" comment="" />
+    <list default="true" id="e6cb0b54-21f7-41d1-a103-7811310de5f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/activate.csh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/chardetect" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/easy_install" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/easy_install-3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/f2py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/f2py3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/f2py3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/pip3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/pip3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/python3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/bin/python3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/lib64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/pip-selfcheck.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commonthey/pyvenv.cfg" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,14 +34,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common_is_that_they.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="180">
+              <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
             </state>
           </provider>
         </entry>
@@ -35,6 +65,7 @@
       <list>
         <option value="$PROJECT_DIR$/secrets.py" />
         <option value="$PROJECT_DIR$/common_is_that_they.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -124,7 +155,7 @@
       <workItem from="1550027515054" duration="5603000" />
       <workItem from="1550081098777" duration="1387000" />
       <workItem from="1550184869390" duration="3816000" />
-      <workItem from="1550258745156" duration="1308000" />
+      <workItem from="1550258745156" duration="1652000" />
     </task>
     <task id="LOCAL-00001" summary="Made it work">
       <created>1550081545623</created>
@@ -144,7 +175,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14904000" />
+    <option name="totallyTimeSpent" value="15248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
@@ -211,11 +242,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common_is_that_they.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="180">
+          <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
