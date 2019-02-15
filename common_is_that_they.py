@@ -3,6 +3,7 @@ import random
 import numpy as np
 import copy
 import functools
+import sys
 
 import requests
 
@@ -92,7 +93,10 @@ def make_commons(dict_2grams, all_words, words=["common","is","that","they"], ma
 def main():
     all_2grams = read_2grams()
     all_words = list(all_2grams.keys())
-    print(make_commons(all_2grams, all_words))
+    if len(sys.argv) >= 3:
+        print(make_commons(all_2grams, all_words, max_words=int(sys.argv[1]), dest_file=sys.argv[2]))
+    else:
+        print(make_commons(all_2grams, all_words))
 
 
 if __name__ == "__main__":
