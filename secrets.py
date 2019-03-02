@@ -1,1 +1,0 @@
-gbooks_key = 'AIzaSyAv97e9d4fATAEMbS5Turo0CdzC-BfPtKA'
